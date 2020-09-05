@@ -1,7 +1,7 @@
 package com.jwiem.rxwebapi.service.author;
 
 import com.jwiem.rxwebapi.api.request.AddAuthorRequest;
-import com.jwiem.rxwebapi.entity.Author;
+import com.jwiem.rxwebapi.models.Author;
 import com.jwiem.rxwebapi.repo.AuthorRepository;
 import io.reactivex.Single;
 import org.springframework.beans.BeanUtils;

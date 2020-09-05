@@ -16,6 +16,8 @@
 
 	<properties>
 		<java.version>11</java.version>
+		<jackson.library>2.7.5</jackson.library>
+		<retrofit.library>2.6.2</retrofit.library>
 	</properties>
 
 	<dependencies>
@@ -54,6 +56,40 @@
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
+		</dependency>
+
+		<!-- Retrofit -->
+        <dependency>
+            <groupId>com.squareup.retrofit2</groupId>
+            <artifactId>adapter-rxjava</artifactId>
+            <version>${retrofit.library}</version>
+        </dependency>
+
+		<dependency>
+			<groupId>com.squareup.retrofit2</groupId>
+			<artifactId>retrofit</artifactId>
+			<version>${retrofit.library}</version>
+		</dependency>
+
+		<!-- Converter-Jackson -->
+		<dependency>
+			<groupId>com.squareup.retrofit2</groupId>
+			<artifactId>converter-jackson</artifactId>
+			<version>${retrofit.library}</version>
+		</dependency>
+
+		<!-- Converter-GSON -->
+		<dependency>
+			<groupId>com.squareup.retrofit2</groupId>
+			<artifactId>converter-gson</artifactId>
+			<version>2.6.2</version>
+		</dependency>
+
+		<!-- Logging -->
+		<dependency>
+			<groupId>com.squareup.okhttp3</groupId>
+			<artifactId>logging-interceptor</artifactId>
+			<version>3.9.0</version>
 		</dependency>
 
 		<dependency>
@@ -104,7 +140,15 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-		</plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
 	</build>
 
 </project>

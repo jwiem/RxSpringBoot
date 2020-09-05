@@ -1,6 +1,6 @@
 package com.jwiem.rxwebapi.repo;
 
-import com.jwiem.rxwebapi.entity.Author;
+import com.jwiem.rxwebapi.models.Author;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

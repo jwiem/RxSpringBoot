@@ -1,4 +1,4 @@
-package com.jwiem.rxwebapi.entity;
+package com.jwiem.rxwebapi.models;
 
 import lombok.*;
 
